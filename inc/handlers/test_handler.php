@@ -21,7 +21,7 @@ if(isset($_POST['begin_test'])) {
 }
 
 //Check if next question button is clicked
-if(isset($_POST['next_question'])) {
+if(isset($_POST['answer'])) {
 	//Take off 1 from total questions left
 	$_SESSION['q_amount_left'] -= 1;
 	//Generate test_key
