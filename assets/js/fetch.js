@@ -28,7 +28,6 @@ class Fetch {
 				method: 'POST',
 				body: formData
 			});
-			this.nextQuestion.disabled = true;
 		}
 	}
 }
