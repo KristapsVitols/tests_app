@@ -30,11 +30,10 @@ class Fetch {
 				method: 'POST',
 				body: formData
 			})
-				// .then(() => {
-				// 	this.nextQuestion.disabled = false;
-				// 	this.nextQuestion.value = 'Nākamais';
-				// 	window.location.reload();
-				// });
+				.then(() => {
+					this.nextQuestion.disabled = false;
+					this.nextQuestion.value = 'Nākamais';
+				});
 		}
 	}
 }
