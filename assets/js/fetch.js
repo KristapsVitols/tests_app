@@ -24,6 +24,8 @@ class Fetch {
 			e.preventDefault();
 			this.answerWarning.classList.add('warning');
 		} else {
+			this.nextQuestion.disabled = true;
+			this.nextQuestion.value = 'Uzgaidi...';
 			fetch('inc/handlers/save_question_handler.php', {
 				method: 'POST',
 				body: formData
