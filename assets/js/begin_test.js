@@ -22,5 +22,7 @@ function validateSelect(e) {
 }
 
 function validateForm(e) {
+	document.querySelector('.submit-start').disabled = true;
+	document.querySelector('.submit-start').value = 'Uzgaidi...';
 	ui.validateForm(e, nameInput, testSelect);
 }

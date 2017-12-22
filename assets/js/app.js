@@ -12,10 +12,16 @@ nextQuestion.addEventListener('click', saveQuestion);
 // Select li eventlistener ( selects(highlights) clicked LI and adds data attribute )
 answerList.addEventListener('click', selectLi);
 
+
+
 function saveQuestion(e) {
 	nextQuestion.disabled = true;
-	const fetchme = new Fetch();
-	fetchme.saveQuestion(e);
+	nextQuestion.value = 'Uzgaidi...';
+	setTimeout(() => {
+		const fetchme = new Fetch();
+		fetchme.saveQuestion(e);	
+	}, 3000)
+	
 }
 
 function selectLi(e) {
