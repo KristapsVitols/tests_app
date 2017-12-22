@@ -27,9 +27,11 @@ class Fetch {
 			fetch('inc/handlers/save_question_handler.php', {
 				method: 'POST',
 				body: formData
-			});
-			this.nextQuestion.disabled = true;
-			this.nextQuestion.value = 'Uzgaidi...';
+			})
+				.then(() => {
+					this.nextQuestion.disabled = true;
+					this.nextQuestion.value = 'Uzgaidi...';
+				});
 		}
 	}
 }
