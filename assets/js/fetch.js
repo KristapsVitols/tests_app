@@ -29,12 +29,12 @@ class Fetch {
 			fetch('inc/handlers/save_question_handler.php', {
 				method: 'POST',
 				body: formData
-			})
-				.then(() => {
-					this.nextQuestion.disabled = false;
-					this.nextQuestion.value = 'Nākamais';
-					window.location.reload();
-				});
+			});
+				// .then(() => {
+				// 	this.nextQuestion.disabled = false;
+				// 	this.nextQuestion.value = 'Nākamais';
+				// 	window.location.reload();
+				// });
 		}
 	}
 }
