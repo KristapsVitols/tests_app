@@ -13,7 +13,7 @@ if(isset($_POST['begin_test'])) {
 	$_SESSION['name'] = trim($_POST['name']);
 	$_SESSION['test_id'] = trim($_POST['test']);
 	$_SESSION['q'] = 1;
-	$_SESSION['test_key'] = rand(1, 1000);
+	$_SESSION['test_key'] = rand(1, 10000);
 	$_SESSION['total_q_amount'] = $_SESSION['q_amount_left'] = sizeof($test->getTestQuestions($_SESSION['test_id']));
 	$_SESSION['correct_answers'] = 0;
 	//redirect to questions page
