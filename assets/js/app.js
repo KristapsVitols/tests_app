@@ -15,8 +15,6 @@ answerList.addEventListener('click', selectLi);
 
 
 function saveQuestion(e) {
-	nextQuestion.disabled = true;
-	nextQuestion.value = 'Uzgaidi...';
 	setTimeout(() => {
 		const fetchme = new Fetch();
 		fetchme.saveQuestion(e);	
