@@ -13,9 +13,9 @@ nextQuestion.addEventListener('click', saveQuestion);
 answerList.addEventListener('click', selectLi);
 
 function saveQuestion(e) {
+	nextQuestion.disabled = true;
 	const fetchme = new Fetch();
 	fetchme.saveQuestion(e);
-	nextQuestion.disabled = true;
 }
 
 function selectLi(e) {
