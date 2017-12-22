@@ -53,9 +53,6 @@ class UI {
 			e.preventDefault();
 			select.style.border = '1px solid red';
 			this.selectWarning.classList.add('warning');
-		} else {
-			document.querySelector('.submit-start').disabled = true;
-			document.querySelector('.submit-start').value = 'Uzgaidi...';
 		}
 	}
 }
