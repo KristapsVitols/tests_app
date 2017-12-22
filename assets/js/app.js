@@ -15,11 +15,8 @@ answerList.addEventListener('click', selectLi);
 
 
 function saveQuestion(e) {
-	setTimeout(() => {
-		const fetchme = new Fetch();
-		fetchme.saveQuestion(e);	
-	}, 3000)
-	
+	const fetchme = new Fetch();
+	fetchme.saveQuestion(e);	
 }
 
 function selectLi(e) {
