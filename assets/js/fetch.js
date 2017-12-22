@@ -33,6 +33,7 @@ class Fetch {
 				.then(() => {
 					this.nextQuestion.disabled = false;
 					this.nextQuestion.value = 'Nākamais';
+					window.location.reload();
 				});
 		}
 	}
