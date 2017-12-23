@@ -98,6 +98,10 @@ i.fa.fa-comments-o {
 	transition: background-color .3s;
 }
 
+.wait {
+	display: none;
+}
+
 .submit-start:hover {
 	background-color: #F9690E;
 }
@@ -248,7 +252,7 @@ progress:not([value])::-webkit-progress-bar {
 		margin-bottom: 6%;
 	}
 
-	#nextQuestion {
+	#nextQuestion, .wait {
 		width: 40%;
 	}
 

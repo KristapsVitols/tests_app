@@ -6,6 +6,7 @@ class Fetch {
 		this.question_id = document.getElementById('question_id').value;
 		this.test_key = document.getElementById('test_key').value;
 		this.nextQuestion = document.querySelector('#nextQuestion');
+		this.waitBtn = document.querySelector('.wait');
 		this.answerWarning = document.querySelector('.answerWarning');
 		this.answer = answer;
 	}
@@ -25,6 +26,7 @@ class Fetch {
 			this.answerWarning.classList.add('warning');
 		} else {
 			this.nextQuestion.style.display = 'none';
+			this.waitBtn.style.display = 'inline';
 			fetch('inc/handlers/save_question_handler.php', {
 				method: 'POST',
 				body: formData

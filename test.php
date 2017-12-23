@@ -26,6 +26,7 @@ if(!isset($_SESSION['name'])) {
 			<input type="hidden" name="question_id" value="<?php echo $question_id; ?>" id="question_id">
 			<input type="hidden" name="test_key" value="<?php echo $_SESSION['test_key']; ?>" id="test_key">
 			<input type="submit" value="Nākamais" class="submit-start" name="next_question" id="nextQuestion">
+			<input type="submit" value="Uzgaidi..." class="submit-start wait" name="" disabled>
 		</form>
 	</div>
 	<script src="assets/js/regexp.js"></script>
