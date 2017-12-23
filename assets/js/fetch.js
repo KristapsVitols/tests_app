@@ -24,6 +24,7 @@ class Fetch {
 			e.preventDefault();
 			this.answerWarning.classList.add('warning');
 		} else {
+			this.nextQuestion.style.display = 'none';
 			fetch('inc/handlers/save_question_handler.php', {
 				method: 'POST',
 				body: formData
